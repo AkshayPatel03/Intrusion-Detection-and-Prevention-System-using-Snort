@@ -28,11 +28,17 @@ sudo apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5
 ```
 If you do not want to go in detail then just copy this command and wait until it finish installing all of them. 
 
+![](images/Install_dependencies.png)
+
+![](images/Install_dependencies-2.png)
+
 4. **Install Snort on Kali Linux**:
    ```bash
    sudo apt-get update
    sudo apt-get install snort
    ```
+![](images/Update_linux.png)  
+![](images/Install_snort.png)
 
 ### I will add some Screenshots for better understaning very soon. 
 
@@ -43,7 +49,7 @@ If you do not want to go in detail then just copy this command and wait until it
    - Ensure both VMs can communicate with each other.
    - You can check my [Home Lab for Cybersecurity Project](https://github.com/AkshayPatel03/home-lab-for-cybersecurity) repository to learn how to build home lab and network configuration for VMs required for this project. 
 
- ![](images/)
+![](images/Check_IPrange.png)
 
 2. **Test Network Connectivity**:
    - From the Kali Linux VM, ping the Metasploitable 2 VM to verify connectivity.
@@ -62,6 +68,13 @@ If you do not want to go in detail then just copy this command and wait until it
    - Set the `HOME_NET` variable to the IP range of your internal network.
    - For example, if your host machine is having `192.168.10.5` ip address with subnet of 24 then here we can add IP range as `192.168.10.0/24`
 
+![](images/Snort_config-1.png)
+
+![](images/Snort_config-2.png)
+
+![](images/Snort_config-3.png)
+
+
 2. **Create Snort Rules**:
    - Create a directory for custom rules.
    - Or in my case, I would be able to go to this directory from the terminal. 
@@ -79,12 +92,18 @@ If you do not want to go in detail then just copy this command and wait until it
    alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1;)
    ```
 
-3. **Update Snort Configuration**:
-   - Include the custom rules in the Snort configuration.
-   - We can do this manually as well as shows in below screenshot. 
-   ```bash
-   echo "include /etc/snort/rules/local.rules" | sudo tee -a /etc/snort/snort.lua
-   ```
+![](images/Configure_localrules_alert-1.png)
+
+![](images/Configure_local-rules_alert-1.png)
+
+![](images/Snorpy_alert_rule-1.png)
+
+![](images/Snorpy_alert_rule-2.png)
+
+![](images/Snorpy_alert_rule-3.png)
+
+![](images/Configure_local-rules_alert-2.png)
+
 
 ## Running Snort
 
@@ -93,13 +112,34 @@ If you do not want to go in detail then just copy this command and wait until it
    sudo snort -A console -q -c /etc/snort/snort.lua -i eth1
    ```
 
+![](images/Run_snort-1.png)
+
+![](images/Run_snort-2.png)
+
+![](images/Run_snort-3.png)
+
 2. **Generate Alerts**:
    - From Metasploitable 2, send a ping to the Kali Linux VM.
    ```bash
    ping <Kali_Linux_IP>
    ping 192.168.10.5
    ```
-   - Observe the alerts generated in the Snort console.
+![](images/Ping_from_metasploitable.png)
+
+![](images/ICMP_detection-1.png)
+
+![](images/ICMP_detection-2.png)
+
+Check this [Snort Packets detection Statestic](reports\Snort_Packet_Statistics.txt) out. 
+
+- Observe the alerts generated in the Snort console.
+
+## Check this `reports` in text files
+- [ICMP Packet Detection file#2](reports/Snort_ICMP_alerts.txt)
+
+- [ICMP Packet Detection file#1](reports/Snort_Packet_Statistics_destination.txt)
+
+- [ICMP Packet Detection file#3](reports/Snort_ICMP_Destination_alerts.txt)
 
 ## Implementing IPS
 
@@ -118,4 +158,10 @@ If you do not want to go in detail then just copy this command and wait until it
 
 ## Conclusion
 
-This project provides a practical demonstration of setting up an IDS and IPS using Snort. By following the steps outlined, you can detect and prevent various cyber attacks, enhancing your cybersecurity skills and contributing to your GitHub portfolio.
+This project provides a comprehensive demonstration of setting up an Intrusion Detection System (IDS) and Intrusion Prevention System (IPS) using Snort. By following the outlined steps, various cyber attacks can be detected and prevented, enhancing practical cybersecurity skills. This hands-on experience involves implementing robust security measures and contributes to a deeper understanding of cybersecurity principles and practices.
+
+
+
+
+
+
