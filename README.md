@@ -13,6 +13,7 @@ This project demonstrates the implementation of an Intrusion Detection System (I
 
 ### Project Setup
 
+
 1. **Install VirtualBox**: Download and install VirtualBox from [here](https://www.virtualbox.org/).
 
 2. **Download Metasploitable 2**: Get the Metasploitable 2 VM from [here](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/).
@@ -32,6 +33,8 @@ If you do not want to go in detail then just copy this command and wait until it
    sudo apt-get update
    sudo apt-get install snort
    ```
+
+### I will add some Screenshots for better understaning very soon. 
 
 ## Network Configuration
 
