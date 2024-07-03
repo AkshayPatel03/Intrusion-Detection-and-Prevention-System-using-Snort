@@ -1,4 +1,4 @@
-## Project Title: Intrusion Detection and Prevention System using Snort
+# Intrusion Detection and Prevention System using Snort
 
 ### Project Description
 
