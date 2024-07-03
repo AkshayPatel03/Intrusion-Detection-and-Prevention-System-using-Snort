@@ -19,6 +19,14 @@ This project demonstrates the implementation of an Intrusion Detection System (I
 
 3. **Install Kali Linux**: Download and install Kali Linux from [here](https://www.kali.org/downloads/).
 
+3. **Install Snort Dependencies**: 
+Go to [dependencies](/dependencies/README.md) sub-repository to install and understand the importance of the installation of dependencies.
+
+```bash
+sudo apt-get install -y build-essential autotools-dev libdumbnet-dev libluajit-5.1-dev libpcap-dev zlib1g-dev pkg-config libhwloc-dev cmake liblzma-dev openssl libssl-dev cpputest libsqlite3-dev libtool uuid-dev git autoconf bison flex libcmocka-dev libnetfilter-queue-dev libunwind-dev libmnl-dev ethtool libjemalloc-dev
+```
+If you do not want to go in detail then just copy this command and wait until it finish installing all of them. 
+
 4. **Install Snort on Kali Linux**:
    ```bash
    sudo apt-get update
