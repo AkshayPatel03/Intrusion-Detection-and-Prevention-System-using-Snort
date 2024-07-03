@@ -1,0 +1,99 @@
+Packet Statistics
+--------------------------------------------------
+daq
+                 received: 422
+                 analyzed: 421
+              outstanding: 1
+          outstanding_max: 1
+                    allow: 421
+                 rx_bytes: 41526
+--------------------------------------------------
+codec
+                    total: 421          (100.000%)
+                 discards: 1            (  0.238%)
+                      arp: 13           (  3.088%)
+                      eth: 421          (100.000%)
+                    icmp4: 404          ( 95.962%)
+                    icmp6: 1            (  0.238%)
+                     ipv4: 407          ( 96.675%)
+                     ipv6: 1            (  0.238%)
+                      udp: 3            (  0.713%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+appid
+                  packets: 407
+        processed_packets: 407
+           total_sessions: 4
+       service_cache_adds: 3
+             bytes_in_use: 456
+             items_in_use: 3
+--------------------------------------------------
+arp_spoof
+                  packets: 13
+--------------------------------------------------
+back_orifice
+                  packets: 2
+--------------------------------------------------
+binder
+              raw_packets: 13
+                new_flows: 4
+                 inspects: 17
+--------------------------------------------------
+detection
+                 analyzed: 421
+               hard_evals: 405
+                   alerts: 410
+             total_alerts: 410
+                   logged: 410
+--------------------------------------------------
+port_scan
+                  packets: 408
+                 trackers: 10
+--------------------------------------------------
+search_engine
+     non_qualified_events: 1
+         qualified_events: 404
+--------------------------------------------------
+stream
+                    flows: 4
+             total_prunes: 1
+idle_prunes_proto_timeout: 1
+       udp_timeout_prunes: 1
+--------------------------------------------------
+stream_icmp
+                 sessions: 2
+                      max: 2
+                  created: 2
+                 released: 2
+--------------------------------------------------
+stream_udp
+                 sessions: 2
+                      max: 2
+                  created: 2
+                 released: 2
+              total_bytes: 792
+--------------------------------------------------
+udp
+        bad_udp4_checksum: 1
+--------------------------------------------------
+wizard
+                udp_scans: 2
+               udp_misses: 2
+--------------------------------------------------
+Appid Statistics
+--------------------------------------------------
+detected apps and services
+              Application: Services   Clients    Users      Payloads   Misc       Referred  
+                  unknown: 1          0          0          0          0          0         
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:07:56
+                  seconds: 476.931640
+                 pkts/sec: 1
+o")~   Snort exiting

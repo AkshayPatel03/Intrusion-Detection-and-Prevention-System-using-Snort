@@ -43,6 +43,8 @@ If you do not want to go in detail then just copy this command and wait until it
    - Ensure both VMs can communicate with each other.
    - You can check my [Home Lab for Cybersecurity Project](https://github.com/AkshayPatel03/home-lab-for-cybersecurity) repository to learn how to build home lab and network configuration for VMs required for this project. 
 
+ ![](images/)
+
 2. **Test Network Connectivity**:
    - From the Kali Linux VM, ping the Metasploitable 2 VM to verify connectivity.
    ```bash
@@ -71,7 +73,8 @@ If you do not want to go in detail then just copy this command and wait until it
    sudo mousepad /etc/snort/rules/local.rules
    ```
    - Add the following rule:
-   - We can use tool called `Snorpy` to generate the rules.
+   - We can use tool called [`Snorpy`](http://snorpy.cyb3rs3c.net/) to generate the rules.
+
    ```plaintext
    alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1;)
    ```
