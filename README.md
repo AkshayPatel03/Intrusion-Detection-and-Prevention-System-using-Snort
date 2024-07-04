@@ -124,8 +124,6 @@ If you do not want to go in detail then just copy this command and wait until it
    ```
 ![](images/Ping_from_metasploitable.png)
 
-![](images/ICMP_detection-1.png)
-
 ![](images/ICMP_detection-2.png)
 
 Check this [Snort Packets detection Statestic](reports\Snort_Packet_Statistics.txt) out. 
