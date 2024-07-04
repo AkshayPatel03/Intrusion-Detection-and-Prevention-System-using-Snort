@@ -40,8 +40,6 @@ If you do not want to go in detail then just copy this command and wait until it
 ![](images/Update_linux.png)  
 ![](images/Install_snort.png)
 
-### I will add some Screenshots for better understaning very soon. 
-
 ## Network Configuration
 
 1. **Configure Network for VMs**:
@@ -159,9 +157,3 @@ Check this [Snort Packets detection Statestic](reports\Snort_Packet_Statistics.t
 ## Conclusion
 
 This project provides a comprehensive demonstration of setting up an Intrusion Detection System (IDS) and Intrusion Prevention System (IPS) using Snort. By following the outlined steps, various cyber attacks can be detected and prevented, enhancing practical cybersecurity skills. This hands-on experience involves implementing robust security measures and contributes to a deeper understanding of cybersecurity principles and practices.
-
-
-
-
-
-
